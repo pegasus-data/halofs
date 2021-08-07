@@ -32,10 +32,10 @@ Instead of managing chunks, HaloFS manages data volumes in the main server. Each
 Go to API guide on how to perform basic tests on your HaloFS instance.
 
 # SDK and Libraries for Developers
-- Golang
-- Java
-- TSJS
-- Rust
+- [Golang](golang-halofs-lib)
+- [Java](java-halofs-lib)
+- [Rust](rust-halofs-lib)
+
 
 # Integration 
 - Distributed Ledger Integration 
