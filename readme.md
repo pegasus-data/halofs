@@ -6,7 +6,7 @@ HaloFS is a distributed storage platform that emphasizes primarily on storing ma
 
 Read the Technical Whitepaper [here](#)
 
-# Problem that HaloFS is solving
+# Problems in using a central main storage server
 In a distributed file systems, each file is split into chunks and a primary main server keeps all the mapping of filenames, chunk indexes, propagation and handlers. The problem with this approach is that the central main server can't handle many small files efficiently, and since all read requests need to go through the chunk master, so it might not scale well for many concurrent users.
 
 # Solution
