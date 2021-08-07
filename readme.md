@@ -1,6 +1,6 @@
 # HaloFS
 
-**This is still in early development. QA and Performance Testers are welcome to contribute.**
+**QA and Performance Testers are welcome to contribute.**
 
 HaloFS is a distributed storage platform that emphasizes primarily on storing massive amounts of data and retrieving the in the most secure and efficient way possible. 
 
@@ -35,7 +35,6 @@ Go to API guide on how to perform basic tests on your HaloFS instance.
 - [Golang](golang-halofs-lib)
 - [Java](java-halofs-lib)
 - [Rust](rust-halofs-lib)
-
 
 # Integration 
 - Distributed Ledger Integration 
