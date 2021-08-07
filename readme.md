@@ -1,6 +1,6 @@
 # HaloFS
 
-**QA and Performance Testers are welcome to contribute.**
+**QA and Performance Testers are welcome to participate. Download the latest binary and run some tests!**
 
 HaloFS is a distributed storage platform that emphasizes primarily on storing massive amounts of data and retrieving the in the most secure and efficient way possible. 
 
