@@ -40,7 +40,7 @@ Go to API guide on how to perform basic tests on your HaloFS instance.
 - Distributed Ledger Integration 
 - Amazon S3 
 - Hadoop
-- WebDAV
+- Red Hat Open Shift
 - AES256-GCM Encrypted Storage
 
 # Contributing
