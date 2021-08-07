@@ -21,9 +21,9 @@ Instead of managing chunks, HaloFS manages data volumes in the main server. Each
 - Support in-memory/leveldb/readonly mode tuning for memory/performance balance.
 - Automatic Disk space reclaim after a deletion of update
 - Support rebalancing the writable and readonly volumes.
-- [Customizable Multiple Storage Tiers][TieredStorage]: Customizable storage disk types to balance performance and cost.
-- [Transparent cloud integration][CloudTier]: unlimited capacity via tiered cloud storage for warm data.
-- [Erasure Coding for warm storage][ErasureCoding]  Rack-Aware 10.4 erasure coding reduces storage cost and increases availability.
+- Customizable storage disk types to balance performance and cost.
+- Unlimited capacity via tiered cloud storage for warm data.
+- Erasure coding reduces storage cost and increases availability.
 
 # Installation Guide
 - Step 1: Download the binary
