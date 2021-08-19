@@ -43,7 +43,7 @@ Go to API guide on how to perform basic tests on your HaloFS instance.
 - Red Hat Open Shift
 - AES256-GCM Encrypted Storage
 
-# Participation Incentive
+# Commerce and Incentive Mechanism
 We have extended HaloFS to have it's own economic incentive mechanism by using blockchain technology. A FileSystem Operator who wants to expose their own HaloFS on the global network can have incentives by either participating or being selected to host either a replication or the main host.
 
 # Contributing
