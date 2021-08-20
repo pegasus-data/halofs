@@ -1,5 +1,7 @@
 # HaloFS
 
+![image](https://user-images.githubusercontent.com/4479171/130297141-745672a2-602d-4df2-9748-20354d1ee87c.png)
+
 **QA and Performance Testers are welcome to participate. Download the latest binary and run some tests!**
 
 HaloFS is a distributed storage platform that emphasizes primarily on storing massive amounts of data and retrieving the in the most secure and efficient way possible. 
