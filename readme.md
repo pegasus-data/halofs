@@ -54,7 +54,7 @@ This will automatically put several volumes connected to your main.
 ./halofs volume -dir="/tmp/data2" -max=2 -mserver="localhost:9333" -port=8081 &
 ```
 ## As a Consumer (Developer)
-We have golang, java and rust libraries but the main server is always accessible via curl.
+We have golang, java and rust libraries but the main server is always accessible thru HTTP which means you can all it using `curl`
 
 **To save a file:**
 Get an DIR assignment first.
