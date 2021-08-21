@@ -82,12 +82,6 @@ Easy! It gets better! You can use the SDK/Libraries below.
 
 # SDK and Libraries for Developers
 - [Golang](https://github.com/halostac-platform/golang-halofs-lib)
-- [Java](https://github.com/halostac-platform/java-halofs-lib)
-- [Rust](https://github.com/halostac-platform/rust-halofs-lib)
-- [Golang - Binance Integration Library](#)
-- [Java - Binance Integration Library](#)
-- [Golang - Symbol Integration Library](#)
-- [Java - Symbol Integration Library](#)
 
 # Solutions Design
 Storage is just one main component in an overall solutions design and HaloFS is flexible enough to accommodate virtually any applications that needs to scale. HaloFS was designed to store AND serve billions of files in the most efficient and fastest way possible. This feature combined with the privacy and security makes it the best storage file system to couple with distributed ledger technology.
