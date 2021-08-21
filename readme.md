@@ -31,7 +31,7 @@ Instead of managing chunks, HaloFS manages data volumes in the main server. Each
 - Step 1: Download the binary
 - Stpe 2: Run the following command
 
-## As Storage Operator
+## As a Storage Operator
 
 **Run your main server**
 ```
@@ -88,6 +88,13 @@ Easy! It gets better! You can use the SDK/Libraries below.
 - [Java - Binance Integration Library](#)
 - [Golang - Symbol Integration Library](#)
 - [Java - Symbol Integration Library](#)
+
+# Solutions Design
+Storage is just one main component in an overall solutions design and HaloFS is flexible enough to accommodate virtually any applications that needs to scale. HaloFS was designed to store AND serve billions of files in the most efficient and fastest way possible. This feature combined with the privacy and security makes it the best storage file system to couple with distributed ledger technology.
+
+![image](https://user-images.githubusercontent.com/4479171/130307547-69df3fe8-caea-4db1-90eb-6e654d5b5456.png)
+
+For guidance and consultation on how to design and integrate HaloFS into your solution, contact us at [info@proofsys.io](mailto:info@proofsys.io)
 
 # Integration 
 - Distributed Ledger Integration 
