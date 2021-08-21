@@ -50,8 +50,8 @@ This will automatically put several volumes connected to your main.
 
 **Say you have different mounted volumes that you want to connect to your main server. You can run the following.**
 ```
-./halofs volume -dir="/tmp/data1" -max=2  -mserver="localhost:9333" -port=8080 & 
-./halofs volume -dir="/tmp/data2" -max=2 -mserver="localhost:9333" -port=8081 &
+./halofs volume -dir="/tmp/data1" -max=2  -mserver="localhost:9310" -port=8080 & 
+./halofs volume -dir="/tmp/data2" -max=2 -mserver="localhost:9310" -port=8081 &
 ```
 ## As a Consumer (Developer)
 We have golang, java and rust libraries but the main server is always accessible thru HTTP which means you can all it using `curl`
