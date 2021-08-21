@@ -31,12 +31,63 @@ Instead of managing chunks, HaloFS manages data volumes in the main server. Each
 - Step 1: Download the binary
 - Stpe 2: Run the following command
 
-Go to API guide on how to perform basic tests on your HaloFS instance.
+## As Storage Operator
+
+**Run your main server**
+```
+./halofs main -defaultReplication=001
+```
+Take note of the replication types:
+
+- 000	no replication, just one copy
+- 001	replicate once on the same rack
+- 010	replicate once on a different rack in the same data center
+- 100	replicate once on a different data center
+- 200	replicate twice on two other different data center
+- 110	replicate once on a different rack, and once on a different data center
+
+This will automatically put several volumes connected to your main.
+
+**Say you have different mounted volumes that you want to connect to your main server. You can run the following.**
+```
+./halofs volume -dir="/tmp/data1" -max=2  -mserver="localhost:9333" -port=8080 & 
+./halofs volume -dir="/tmp/data2" -max=2 -mserver="localhost:9333" -port=8081 &
+```
+## As a Consumer (Developer)
+We have golang, java and rust libraries but the main server is always accessible via curl.
+
+**To save a file:**
+Get an DIR assignment first.
+```
+curl http://localhost:9333/dir/assign
+{"count":1,"fid":"3,01637037d6","url":"127.0.0.1:8080","publicUrl":"localhost:8080"}
+```
+Then use the `fid` to store the file
+```
+curl -F file=@/home/areyes/myphoto.jpg http://127.0.0.1:8080/3,01637037d6
+{"name":"myphoto.jpg","size":43234,"eTag":"1cc0118e"}
+```
+
+**To read or load a file:**
+```
+curl http://localhost:9333/dir/lookup?volumeId=3
+{"volumeId":"3","locations":[{"publicUrl":"localhost:8080","url":"localhost:8080"}]}
+```
+**To clean up or trigger a deletion of the file**
+```
+curl -X DELETE http://127.0.0.1:8080/3,01637037d6
+```
+
+Easy! It gets better! You can use the SDK/Libraries below. 
 
 # SDK and Libraries for Developers
 - [Golang](https://github.com/halostac-platform/golang-halofs-lib)
 - [Java](https://github.com/halostac-platform/java-halofs-lib)
 - [Rust](https://github.com/halostac-platform/rust-halofs-lib)
+- [Golang - Binance Integration Library](#)
+- [Java - Binance Integration Library](#)
+- [Golang - Symbol Integration Library](#)
+- [Java - Symbol Integration Library](#)
 
 # Integration 
 - Distributed Ledger Integration 
