@@ -39,12 +39,11 @@ Instead of managing chunks, HaloFS manages data volumes in the main server. Each
 ```
 Take note of the replication types:
 
-- 000	no replication, just one copy
-- 001	replicate once on the same rack
-- 010	replicate once on a different rack in the same data center
-- 100	replicate once on a different data center
-- 200	replicate twice on two other different data center
-- 110	replicate once on a different rack, and once on a different data center
+- 000	no replication
+- 001	one replication in a single rack
+- 010	one replication in a different rack on the same data center
+- 100	one replication on a different data center
+- 200	multiple replication on two other different data center
 
 This will automatically put several volumes connected to your main.
 
