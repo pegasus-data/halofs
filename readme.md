@@ -16,7 +16,7 @@ Instead of managing chunks, HaloFS manages data volumes in the main server. Each
 
 # Features
 - Automatic main server failover - no single point of failure in case a volume is down.
-- Replication mechanism that can be set.
+- Replication strategy that can be set.
 - Automatic GZIP compression
 - Any server node or contributor can add to the total storage space.
 - Support ETag, Accept-Range, Last-Modified, etc.
